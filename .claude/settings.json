@@ -1,0 +1,23 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(topics/**)",
+      "Read(sessions/**)",
+      "Read(progress.json)",
+      "Write(sessions/**)",
+      "Write(progress.json)",
+      "Edit(sessions/**)",
+      "Edit(progress.json)",
+      "Glob(topics/**)",
+      "Glob(sessions/**)"
+    ],
+    "deny": [
+      "Bash",
+      "WebFetch",
+      "Write(CLAUDE.md)",
+      "Edit(CLAUDE.md)",
+      "Write(.claude/**)",
+      "Edit(.claude/**)"
+    ]
+  }
+}

@@ -1,0 +1,34 @@
+{
+  "total_sessions": 0,
+  "total_questions": 0,
+  "overall_avg_score": 0,
+  "topics": {
+    "data-structures": {
+      "questions_attempted": [],
+      "scores": [],
+      "avg_score": 0
+    },
+    "algorithms": {
+      "questions_attempted": [],
+      "scores": [],
+      "avg_score": 0
+    },
+    "python-backend": {
+      "questions_attempted": [],
+      "scores": [],
+      "avg_score": 0
+    },
+    "system-design": {
+      "questions_attempted": [],
+      "scores": [],
+      "avg_score": 0
+    },
+    "behavioral": {
+      "questions_attempted": [],
+      "scores": [],
+      "avg_score": 0
+    }
+  },
+  "sessions": [],
+  "last_updated": null
+}
