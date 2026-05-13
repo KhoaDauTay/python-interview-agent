@@ -13,7 +13,9 @@
       "Bash(ssh-keyscan github.com)",
       "Bash(git config *)",
       "Bash(security find-internet-password *)",
-      "Bash(ssh-add -l)"
+      "Bash(ssh-add -l)",
+      "Skill(update-config)",
+      "Skill(update-config:*)"
     ]
   }
 }

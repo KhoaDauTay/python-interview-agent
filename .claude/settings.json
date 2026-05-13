@@ -16,8 +16,7 @@
       "WebFetch",
       "Write(CLAUDE.md)",
       "Edit(CLAUDE.md)",
-      "Write(.claude/**)",
-      "Edit(.claude/**)"
+      "Write(.claude/**)"
     ]
   }
 }

@@ -35,6 +35,19 @@ Hỏi học viên muốn ôn phần nào:
 | `topics/08-database-advanced.md` | Database Advanced | SQL vs NoSQL, Indexing internals, Transactions, Replication, Sharding |
 | `topics/09-security.md` | Security | Hash/Encrypt/Encode, SSL/TLS, JWT, DDoS, Password storage |
 
+### Bước 1b — Kiểm tra session cũ
+
+Sau khi biết topic, dùng `list_directory("sessions/")` để kiểm tra có file session nào cho topic này không (tìm theo tên topic trong tên file).
+
+- **Nếu có session cũ**: Đọc file đó bằng `read_file`, thông báo và hỏi:
+  > "Tôi tìm thấy notes từ buổi học trước (ngày XX). Bạn muốn **ôn lại notes cũ** hay **bắt đầu mới**?"
+  - Nếu ôn lại: trình bày nội dung từ file, bỏ qua generate lại
+  - Nếu bắt đầu mới: tiếp tục bình thường, ghi đè file cũ
+
+- **Nếu không có session**: Tiếp tục tạo mới bình thường
+
+---
+
 ### Bước 2 — Đọc file topic
 
 Dùng `read_file` để đọc file topic tương ứng. Tìm đúng section học viên yêu cầu.
@@ -67,6 +80,27 @@ Với mỗi concept trong section:
 Sau khi giải thích xong một concept, hỏi:
 > "Muốn ôn tiếp **[concept tiếp theo]** không, hay có câu hỏi gì thêm? Khi ready thì gõ `/start` để test thật nhé! 🚀"
 
+### Lưu session sau khi study
+
+Sau khi hoàn thành giải thích một topic (hoặc khi học viên nói "xong" / "lưu lại"), dùng `write_file` để lưu toàn bộ nội dung đã giải thích vào:
+
+`sessions/YYYY-MM-DD_<topic-slug>.md`
+
+**Format file:**
+```
+# Session: <Topic> — YYYY-MM-DD
+**Level:** <level> | **Mode:** Study
+**Topics covered:** <danh sách sections đã ôn>
+
+---
+[toàn bộ notes đã giải thích, format theo PART 1, PART 2...]
+```
+
+
+
+**Mục đích:** Lần sau `/study` cùng topic sẽ load file này thay vì generate lại từ đầu.
+
+---
 ### Ngôn ngữ
 
 Trả lời bằng **tiếng Việt** là chính. Code và technical terms giữ tiếng Anh.
