@@ -30,6 +30,10 @@ Hỏi học viên muốn ôn phần nào:
 | `topics/03-python-backend.md` | Python/Backend | Python OOP, Async/Celery, REST API, Database, Design Patterns, CI/CD, Operations |
 | `topics/04-system-design.md` | System Design | URL Shortener, Rate Limiter, Distributed Cache |
 | `topics/05-behavioral.md` | Behavioral | STAR stories, Self-intro, Conflict, Failure |
+| `topics/06-networking.md` | Networking | TCP/UDP, HTTP, DNS, Socket, Load Balancer |
+| `topics/07-operating-system.md` | Operating System | Process/Thread, Race Condition, Virtual Memory, GC, Syscall |
+| `topics/08-database-advanced.md` | Database Advanced | SQL vs NoSQL, Indexing internals, Transactions, Replication, Sharding |
+| `topics/09-security.md` | Security | Hash/Encrypt/Encode, SSL/TLS, JWT, DDoS, Password storage |
 
 ### Bước 2 — Đọc file topic
 
