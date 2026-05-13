@@ -25,11 +25,6 @@ build/
 .claude/worktrees/
 .claude/settings.local.json
 
-# Session files (chứa nội dung ôn tập cá nhân, không cần push)
-sessions/*.md
-
-# Personal docs
-docs/*.pdf
 
 # Progress (optional: bỏ comment nếu muốn giữ private)
 # progress.json
