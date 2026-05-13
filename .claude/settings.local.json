@@ -2,7 +2,18 @@
   "permissions": {
     "allow": [
       "Bash(git add *)",
-      "Bash(git commit -m 'chore: update topic question banks to match CV and interview domains *)"
+      "Bash(git commit -m 'chore: update topic question banks to match CV and interview domains *)",
+      "Bash(git push *)",
+      "Bash(gh pr *)",
+      "Bash(gh auth *)",
+      "Bash(export PATH=\"$PATH:/opt/homebrew/bin:/usr/local/bin:$HOME/.local/bin:$HOME/bin\")",
+      "Bash(gh --version)",
+      "Bash(git remote *)",
+      "Bash(chmod 700 ~/.ssh)",
+      "Bash(ssh-keyscan github.com)",
+      "Bash(git config *)",
+      "Bash(security find-internet-password *)",
+      "Bash(ssh-add -l)"
     ]
   }
 }
