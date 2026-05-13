@@ -1,0 +1,39 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.venv/
+venv/
+env/
+*.egg-info/
+dist/
+build/
+.uv/
+
+# PyCharm / JetBrains
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Claude Code internals
+.claude/.DS_Store
+.claude/worktrees/
+.claude/settings.local.json
+
+# Session files (chứa nội dung ôn tập cá nhân, không cần push)
+sessions/*.md
+
+# Personal docs
+docs/*.pdf
+
+# Progress (optional: bỏ comment nếu muốn giữ private)
+# progress.json
+
+# Env
+.env
+.env.local
