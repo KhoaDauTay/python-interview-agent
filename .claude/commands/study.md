@@ -84,11 +84,13 @@ Sau khi giải thích xong một concept, hỏi:
 
 Sau khi hoàn thành giải thích một topic (hoặc khi học viên nói "xong" / "lưu lại"), dùng `write_file` để lưu toàn bộ nội dung đã giải thích vào:
 
-`sessions/YYYY-MM-DD_<topic-slug>.md`
+`sessions/study/{DATE}_<topic-slug>.md`
+
+Thay `{DATE}` bằng `currentDate` từ context trước khi ghi file.
 
 **Format file:**
 ```
-# Session: <Topic> — YYYY-MM-DD
+# Session: <Topic> — {DATE}
 **Level:** <level> | **Mode:** Study
 **Topics covered:** <danh sách sections đã ôn>
 

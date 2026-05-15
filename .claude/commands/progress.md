@@ -2,7 +2,7 @@
 
 Hiển thị tổng kết toàn bộ quá trình ôn luyện.
 
-Teacher sẽ đọc tất cả file trong `sessions/` và `progress.json` để tổng hợp:
+Teacher sẽ đọc tất cả file trong `sessions/interview/` và `sessions/study/` để tổng hợp:
 
 ```
 📈 TIẾN ĐỘ ÔN TẬP
