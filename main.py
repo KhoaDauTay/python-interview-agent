@@ -1,16 +1,8 @@
-# This is a sample Python script.
+from pathlib import Path
 
-# Press ⌥⇧R to execute it or replace it with your code.
-# Press Double ⇧ to search everywhere for classes, files, tool windows, actions, and settings.
+output = Path("/Users/khoahuynh/PycharmProjects/python-interview-agent/topics/senior/senior.md")
 
-
-def print_hi(name):
-    # Use a breakpoint in the code line below to debug your script.
-    print(f'Hi, {name}')  # Press ⌃' to toggle the breakpoint.
-
-
-# Press the green button in the gutter to run the script.
-if __name__ == '__main__':
-    print_hi('PyCharm')
-
-# See PyCharm help at https://www.jetbrains.com/help/pycharm/
+with output.open("w", encoding="utf-8") as outfile:
+    for md_file in sorted(Path("/Users/khoahuynh/PycharmProjects/python-interview-agent/topics/senior").glob("*.md")):
+        outfile.write(md_file.read_text(encoding="utf-8"))
+        outfile.write("\n\n---\n\n")
